@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Guess the secret number{% endblock title %}</title>
+
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+        <h1>Guess the secret number</h1>
+
+        <p>
+            <a href="/">Game</a> | <a href="/profile">Profile</a> | <a href="/users">All users</a>
+        </p>
+
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
