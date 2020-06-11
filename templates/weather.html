@@ -2,14 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Final Project{% endblock title %}</title>
+        <title> Weather</title>
 
         <link rel="stylesheet" href="/static/css/bootstrap.css">
-    </head>
+        <link rel="stylesheet" href="/static/css/custom.css">
 
-    <body>
 
-        <nav class="navbar navbar-expand-lg navbar-gray bg-dark">
+
+
+    <body class="big-banner">
+
+            <nav class="navbar navbar-expand-lg navbar-gray bg-dark">
         <a class="navbar-brand text-warning" href="#"> GAB N. Final Project Assignment</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,9 +41,15 @@
         </div>
     </nav>
 
+                <h1 class="text-center"> Weather</h1>
+                <h2 class="text-center"><strong>Welcome!</strong> </h2>
+                <p class="text-center">Location: {{ data.name }}</p>
+                <p class="text-center">Weather description: {{ data.weather[0].description }} </p>
+                <p class="text-center">Current temperature: {{ data.main.temp }} °C</p>
+                <p class="text-center">Current min temperature : {{ data.main.temp_min }} °C</p>
+                <p class="text-center">Current max temperature: {{ data.main.temp_max }} °C</p>
+                <p class="text-center">Current humidity: {{ data.main.humidity }} °C</p>
+                <p class="text-center">Current feels like: {{ data.main.feels_like }} °C</p>
 
-
-        {% block content %}
-        {% endblock content %}
     </body>
 </html>
