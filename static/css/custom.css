@@ -10,3 +10,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mamba{
+  /* The image used */
+  background-image: url('/static/img/evolution.gif');
+
+  /* Full height */
+  height: 200%;
+
+  /* Center and scale the image nicely */
+  background-position: 10, 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
